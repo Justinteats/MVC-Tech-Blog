@@ -1,0 +1,24 @@
+ <div class="card">
+      <div class="card-header bg-light flex-row justify-space-between">
+        <h2>
+          {{title}}
+        </h2>
+        <h4>
+            {{content}}
+        </h4>
+        <div class="col-md-4">
+        <button class="btn btn-sm btn-danger post-list" data-id="{{id}}">DELETE</button>
+      </div>
+        <div id="date">
+          Post by
+          {{user.username}}
+          on
+          {{format_date date_created}}
+        </div>
+        <div>
+        <a href="/dashboard/edit/{{id}}" class="btn btn-sm btn-warning edit-link" id="edit">Edit post</a>
+      </div>
+      </div>
+    </div>
+
+    <script src="/js/delete.js"></script>

@@ -1,0 +1,20 @@
+<div class="row mt-4">
+  <div class="col-md-6">
+    <h3>Update your Blog Post:</h3>
+
+    <form class="form new-post-form">
+      <div class="form-group">
+        <label for="inputEmail4">Blog Post Name:</label>
+        <textarea class="form-control" type="text" id="edit-title"> {{title}} </textarea>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Share your thoughts:</label>
+        <textarea class="form-control" type="text" id="edit-desc">{{content}}</textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary post-list" data-id="{{id}}">Update</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/js/editPost.js"></script>
